@@ -1,7 +1,7 @@
 import java.util.HashMap;
 import java.util.Scanner;
 
-class Twosum{
+class TwosumL1{
 
     static int[] brute_two_sum(int[] arr,int target){
         int[] ans={-1,-1};

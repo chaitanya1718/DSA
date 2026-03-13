@@ -21,7 +21,7 @@ public class BestTimeBuyandSellL121 {
             int currProfit=arr[rptr]-arr[lptr];
             maxProfit=Math.max(maxProfit, currProfit);
            if(arr[rptr]<=arr[lptr]){
-            lptr++;
+            lptr=rptr;
            }
         }
         return maxProfit;
@@ -32,22 +32,17 @@ public class BestTimeBuyandSellL121 {
         int minPrice=arr[0];
         for(int i=1;i<arr.length;i++){
             int currProfit=arr[i]-minPrice;
-            
             minPrice=Math.min(arr[i],minPrice);
-
+            maxProfit=Math.max(currProfit,maxProfit);
         }
+        return maxProfit;
     }
-
-    
-
 
     public static void main(String[] args) {
         int[] arr={7,1,5,3,6,4};
         System.out.println(brute_max_profit(arr));
         System.out.println(optimal_max_profit(arr));
-
-
-
+        System.out.println(better_max_profit(arr));
     }
     
 }
