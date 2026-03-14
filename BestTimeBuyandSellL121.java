@@ -1,4 +1,4 @@
-import java.util.*;
+
 public class BestTimeBuyandSellL121 {
 
     static int brute_max_profit(int[] arr){
@@ -28,7 +28,6 @@ public class BestTimeBuyandSellL121 {
     }
     static int better_max_profit(int[] arr){
         int maxProfit=0;
-        int lptr=0;
         int minPrice=arr[0];
         for(int i=1;i<arr.length;i++){
             int currProfit=arr[i]-minPrice;
