@@ -21,7 +21,7 @@ class MaxSubArrPrdL152{
 
         for(int i=0;i<n;i++){
             if(arr[i]==0){
-                 max_product = Math.max(max_product, 0);
+                max_product = Math.max(max_product, 0);
                 curr_min=1;
                 curr_max=1;
                 continue;
@@ -38,6 +38,5 @@ class MaxSubArrPrdL152{
         int[] arr = {-2,0,-1};
         System.out.println(brute_max_product(arr));
         System.out.println(optimal_max_product(arr));
-
     }
 }
