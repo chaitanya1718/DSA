@@ -1,6 +1,7 @@
 class SumOfDistancesL2615{
 
     // O(n^2) solution
+    //brute force
     static long[] brute_distance(int[] nums) {
 
         int n=nums.length;
